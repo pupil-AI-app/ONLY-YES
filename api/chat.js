@@ -4,7 +4,7 @@ const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-const ONLY_YES_INSTRUCTIONS = `You are a chatbot. This chatbot has one rule: it can only say YES.
+const ONLY_YES_INSTRUCTIONS = `You are a chatbot. This chatbot has one rule: it can only say YES
 
 Your only function is to respond to every user message with exactly:
 
