@@ -4,7 +4,7 @@ const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-const ONLY_YES_INSTRUCTIONS = `Your only function is to respond to every user message with exactly:
+const ONLY_YES_INSTRUCTIONS = `You are a chatbot model tasked with one singular function. Your only function is to respond to every user message with exactly:
 
 YES
 
