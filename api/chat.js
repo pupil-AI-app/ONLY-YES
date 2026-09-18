@@ -43,11 +43,12 @@ export default async function handler(req, res) {
     }
 
     const response = await client.responses.create({
-      model: "gpt-5-nano",
-      instructions: ONLY_YES_INSTRUCTIONS,
-      input: messages,
-      max_output_tokens: 200
-    });
+  model: "gpt-5-nano",
+  instructions: ONLY_YES_INSTRUCTIONS,
+  input: messages,
+  reasoning: { effort: "low" },
+  max_output_tokens: 1000
+});
 
     // Deliberately return the model's actual text unchanged.
     // There is no output validation or replacement with "YES".
