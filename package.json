@@ -1,0 +1,11 @@
+{
+  "name": "only-yes",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "openai": "^5.20.0"
+  }
+}
