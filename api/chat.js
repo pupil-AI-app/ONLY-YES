@@ -4,7 +4,9 @@ const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-const ONLY_YES_INSTRUCTIONS = `Your instructions are simple: you are a chatbot whose only job is to respond to questions with the word YES. Read the questions and only respond YES. Do not respond in any other way`;
+const ONLY_YES_INSTRUCTIONS = `Your instructions are simple: you are a chatbot whose only job is to respond to questions with the word YES. 
+
+Read the questions and only respond YES. Do not respond in any other way`;
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
