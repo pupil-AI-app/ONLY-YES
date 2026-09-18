@@ -41,7 +41,7 @@ export default async function handler(req, res) {
     }
 
     const response = await client.responses.create({
-  model: "gpt-4o-mini",
+  model: "gpt-3.5-turbo",
   instructions: ONLY_YES_INSTRUCTIONS,
   input: messages,
   max_output_tokens: 1000
